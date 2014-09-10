@@ -516,6 +516,13 @@ public class Numbers {
 		return buffer;
 	}
 
+	/**
+	 * Removes trailing zeros from a number if present. Also removes leading or trailing whitespaces.
+	 *
+	 * @param buffer The number string to trim the zeros away. May be <code>null</code>.
+	 * @param localize Whether or not the number should be localized.
+	 * @return The trimmed number string, or <code>null</code>.
+	 */
 	public static String trimTrailingZerosAfterDecimal(String buffer, boolean localized) {
 		if (buffer != null) {
 			buffer = buffer.trim();
