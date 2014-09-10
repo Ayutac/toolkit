@@ -31,6 +31,13 @@ public class Numbers {
 		NUMBER_PLUS_FORMAT = (DecimalFormat) NUMBER_FORMAT.clone();
 		NUMBER_PLUS_FORMAT.setPositivePrefix("+"); //$NON-NLS-1$
 	}
+	
+	/**
+	 * @param val The maximal number of decimal digits.
+	 */
+	public static void setMaximumFractionDigits(int val) {
+		NUMBER_FORMAT.setMaximumFractionDigits(val);
+	}
 
 	/**
 	 * @param buffer The string to convert.
