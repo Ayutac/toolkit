@@ -23,10 +23,11 @@ public class Numbers {
 	private static final String			HEX_PREFIX	= "0x"; //$NON-NLS-1$
 	private static final DecimalFormat	NUMBER_FORMAT;
 	private static final DecimalFormat	NUMBER_PLUS_FORMAT;
+	public static final int DEFAULT_DECIMALS = 5;
 
 	static {
 		NUMBER_FORMAT = (DecimalFormat) NumberFormat.getNumberInstance();
-		NUMBER_FORMAT.setMaximumFractionDigits(5);
+		NUMBER_FORMAT.setMaximumFractionDigits(DEFAULT_DECIMALS);
 
 		NUMBER_PLUS_FORMAT = (DecimalFormat) NUMBER_FORMAT.clone();
 		NUMBER_PLUS_FORMAT.setPositivePrefix("+"); //$NON-NLS-1$
