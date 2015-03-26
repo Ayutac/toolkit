@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 1998-2014 by Richard A. Wilkes. All rights reserved.
+ * Copyright (c) 1998-2015 by Richard A. Wilkes. All rights reserved.
  *
  * This Source Code Form is subject to the terms of the Mozilla Public License,
  * version 2.0. If a copy of the MPL was not distributed with this file, You
@@ -34,7 +34,9 @@ import java.util.Properties;
 /** Provides the implementation of preferences. */
 public class Preferences {
 	@Localize("Global preferences have not been initialized yet!")
+	@Localize(locale = "ru", value = "Глобальные парметры ещё не были инициализированы!")
 	@Localize(locale = "de", value = "Globale Einstellungen wurden noch nicht initialisiert!")
+	@Localize(locale = "es", value = "Las preferencias generales no se han iniciallizado todavia")
 	private static String		UNINITIALIZED;
 
 	static {

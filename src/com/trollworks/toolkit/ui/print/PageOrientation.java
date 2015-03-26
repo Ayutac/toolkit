@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 1998-2014 by Richard A. Wilkes. All rights reserved.
+ * Copyright (c) 1998-2015 by Richard A. Wilkes. All rights reserved.
  *
  * This Source Code Form is subject to the terms of the Mozilla Public License,
  * version 2.0. If a copy of the MPL was not distributed with this file, You
@@ -70,16 +70,24 @@ public enum PageOrientation {
 	};
 
 	@Localize("Portrait")
+	@Localize(locale = "ru", value = "Книжная")
 	@Localize(locale = "de", value = "Hochformat")
+	@Localize(locale = "es", value = "Vertical")
 	static String	PORTRAIT_TITLE;
 	@Localize("Landscape")
+	@Localize(locale = "ru", value = "Альбомная")
 	@Localize(locale = "de", value = "Querformat")
+	@Localize(locale = "es", value = "Horizontal")
 	static String	LANDSCAPE_TITLE;
 	@Localize("Reversed Portrait")
+	@Localize(locale = "ru", value = "Зеркальная книжная")
 	@Localize(locale = "de", value = "Hochformat gedreht")
+	@Localize(locale = "es", value = "Vertical invertido")
 	static String	REVERSED_PORTRAIT_TITLE;
 	@Localize("Reversed Landscape")
+	@Localize(locale = "ru", value = "Зеркальная альбомная")
 	@Localize(locale = "de", value = "Querformat gedreht")
+	@Localize(locale = "es", value = "Horizontal invertido")
 	static String	REVERSED_LANDSCAPE_TITLE;
 
 	static {

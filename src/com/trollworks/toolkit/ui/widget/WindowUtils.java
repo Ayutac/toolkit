@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 1998-2014 by Richard A. Wilkes. All rights reserved.
+ * Copyright (c) 1998-2015 by Richard A. Wilkes. All rights reserved.
  *
  * This Source Code Form is subject to the terms of the Mozilla Public License,
  * version 2.0. If a copy of the MPL was not distributed with this file, You
@@ -31,10 +31,14 @@ import javax.swing.text.JTextComponent;
 /** Utilities for use with windows. */
 public class WindowUtils {
 	@Localize("Error")
+	@Localize(locale = "ru", value = "Ошибка")
 	@Localize(locale = "de", value = "Fehler")
+	@Localize(locale = "es", value = "Error")
 	private static String	ERROR;
 	@Localize("Warning")
+	@Localize(locale = "ru", value = "Внимание")
 	@Localize(locale = "de", value = "Warnung")
+	@Localize(locale = "es", value = "Aviso")
 	private static String	WARNING;
 
 	static {

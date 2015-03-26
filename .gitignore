@@ -2,3 +2,4 @@
 /build
 /.apt_generated
 **/*~
+/build/

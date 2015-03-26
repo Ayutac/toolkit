@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 1998-2014 by Richard A. Wilkes. All rights reserved.
+ * Copyright (c) 1998-2015 by Richard A. Wilkes. All rights reserved.
  *
  * This Source Code Form is subject to the terms of the Mozilla Public License,
  * version 2.0. If a copy of the MPL was not distributed with this file, You
@@ -29,7 +29,9 @@ import javax.swing.JMenu;
 /** Provides the standard "Window" menu. */
 public class WindowMenuProvider implements MenuProvider {
 	@Localize("Window")
+	@Localize(locale = "ru", value = "Окно")
 	@Localize(locale = "de", value = "Fenster")
+	@Localize(locale = "es", value = "Ventana")
 	private static String		WINDOW;
 
 	static {

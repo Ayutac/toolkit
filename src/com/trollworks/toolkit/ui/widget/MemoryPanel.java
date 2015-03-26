@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 1998-2014 by Richard A. Wilkes. All rights reserved.
+ * Copyright (c) 1998-2015 by Richard A. Wilkes. All rights reserved.
  *
  * This Source Code Form is subject to the terms of the Mozilla Public License,
  * version 2.0. If a copy of the MPL was not distributed with this file, You
@@ -41,10 +41,14 @@ import javax.swing.border.BevelBorder;
 /** Displays the current memory usage. */
 public class MemoryPanel extends JPanel implements Runnable, HierarchyListener, MouseListener {
 	@Localize("{0}MB used of {1}MB")
+	@Localize(locale = "ru", value = "{0}Мб использовано из {1}Мб")
 	@Localize(locale = "de", value = "{0}MiB von {1}MiB benutzt")
+	@Localize(locale = "es", value = "Usados {0}MB de {1}MB")
 	private static String		FORMAT;
 	@Localize("Click to run garbage collection")
+	@Localize(locale = "ru", value = "Нажмите, чтобы запустить сбор мусора")
 	@Localize(locale = "de", value = "Klicken, um eine Speicherbereinigung durchzuführen")
+	@Localize(locale = "es", value = "Haz click para ejecutar el recolector de basura")
 	private static String		TOOLTIP;
 
 	static {

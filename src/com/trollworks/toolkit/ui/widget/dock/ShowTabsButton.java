@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 1998-2014 by Richard A. Wilkes. All rights reserved.
+ * Copyright (c) 1998-2015 by Richard A. Wilkes. All rights reserved.
  *
  * This Source Code Form is subject to the terms of the Mozilla Public License,
  * version 2.0. If a copy of the MPL was not distributed with this file, You
@@ -49,7 +49,9 @@ import javax.swing.UIManager;
 
 public class ShowTabsButton extends JComponent implements MouseListener, MouseMotionListener, ComponentListener, ActionListener {
 	@Localize("Show Hidden Tabs List")
+	@Localize(locale = "ru", value = "Показать список скрытых закладок")
 	@Localize(locale = "de", value = "Zeigt die Liste mit ausgeblendeten Tabs an")
+	@Localize(locale = "es", value = "Mostrar las solapas ocultas")
 	private static String		TOOLTIP;
 
 	static {

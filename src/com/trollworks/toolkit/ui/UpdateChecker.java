@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 1998-2014 by Richard A. Wilkes. All rights reserved.
+ * Copyright (c) 1998-2015 by Richard A. Wilkes. All rights reserved.
  *
  * This Source Code Form is subject to the terms of the Mozilla Public License,
  * version 2.0. If a copy of the MPL was not distributed with this file, You
@@ -35,18 +35,29 @@ import javax.swing.JOptionPane;
 /** Provides a background check for updates. */
 public class UpdateChecker implements Runnable {
 	@Localize("Checking for updates\u2026")
+	@Localize(locale = "ru", value = "Проверка обновлений\u2026")
 	@Localize(locale = "de", value = "Prüfe auf neue Version\u2026")
+	@Localize(locale = "es", value = "Comprobando actulizaciones\u2026")
 	private static String		CHECKING;
-	@Localize("There are no updates available")
+	@Localize("You have the most recent version")
+	@Localize(locale = "ru", value = "У вас самая последняя версия")
 	@Localize(locale = "de", value = "Programm ist aktuell")
+	@Localize(locale = "es", value = "Ya tienes la versión más reciente")
 	private static String		UP_TO_DATE;
 	@Localize("A new version is available")
+	@Localize(locale = "ru", value = "Доступна новая версия")
+	@Localize(locale = "de", value = "Eine neue Version ist verfügbar")
+	@Localize(locale = "es", value = "Hay una nueva versión disponible")
 	private static String		OUT_OF_DATE;
 	@Localize("Update")
+	@Localize(locale = "ru", value = "Обновить")
 	@Localize(locale = "de", value = "Aktualisieren")
+	@Localize(locale = "es", value = "Actualizar")
 	private static String		UPDATE_TITLE;
 	@Localize("Ignore")
+	@Localize(locale = "ru", value = "Игнорировать")
 	@Localize(locale = "de", value = "Ignorieren")
+	@Localize(locale = "es", value = "Ignorar")
 	private static String		IGNORE_TITLE;
 
 	static {

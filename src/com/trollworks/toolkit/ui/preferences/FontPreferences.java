@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 1998-2014 by Richard A. Wilkes. All rights reserved.
+ * Copyright (c) 1998-2015 by Richard A. Wilkes. All rights reserved.
  *
  * This Source Code Form is subject to the terms of the Mozilla Public License,
  * version 2.0. If a copy of the MPL was not distributed with this file, You
@@ -29,7 +29,9 @@ import javax.swing.UIManager;
 /** The font preferences panel. */
 public class FontPreferences extends PreferencePanel implements ActionListener {
 	@Localize("Fonts")
+	@Localize(locale = "ru", value = "Шрифты")
 	@Localize(locale = "de", value = "Schriftarten")
+	@Localize(locale = "es", value = "Fuentes")
 	private static String	FONTS;
 
 	static {

@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 1998-2014 by Richard A. Wilkes. All rights reserved.
+ * Copyright (c) 1998-2015 by Richard A. Wilkes. All rights reserved.
  *
  * This Source Code Form is subject to the terms of the Mozilla Public License,
  * version 2.0. If a copy of the MPL was not distributed with this file, You
@@ -33,13 +33,19 @@ import java.util.Map;
 /** Provides a set of images at different resolutions. */
 public class StdImageSet implements Comparator<StdImage> {
 	@Localize("Invalid ICNS")
+	@Localize(locale = "ru", value = "Недопустимый ICNS")
 	@Localize(locale = "de", value = "Fehlerhafte ICNS-Datei")
+	@Localize(locale = "es", value = "fichero ICNS no es válido")
 	private static String					INVALID_ICNS;
 	@Localize("Invalid ICO")
+	@Localize(locale = "ru", value = "Недопустимый ICO")
 	@Localize(locale = "de", value = "Fehlerhafte ICO-Datei")
+	@Localize(locale = "es", value = "fichero ICO no es válido")
 	private static String					INVALID_ICO;
 	@Localize("Unable to create PNG")
+	@Localize(locale = "ru", value = "Невозможно создать PNG")
 	@Localize(locale = "de", value = "Kann PNG-Datei nicht erstellen")
+	@Localize(locale = "es", value = "Imposible crear fichero PNG")
 	private static String					UNABLE_TO_CREATE_PNG;
 
 	static {

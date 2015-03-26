@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 1998-2014 by Richard A. Wilkes. All rights reserved.
+ * Copyright (c) 1998-2015 by Richard A. Wilkes. All rights reserved.
  *
  * This Source Code Form is subject to the terms of the Mozilla Public License,
  * version 2.0. If a copy of the MPL was not distributed with this file, You
@@ -38,10 +38,10 @@ public class WeightValue extends UnitsValue<WeightUnits> {
 	}
 
 	/**
-	 * Creates a new {@link UnitsValue}.
+	 * Creates a new {@link WeightValue}.
 	 *
 	 * @param value The value to use.
-	 * @param units The {@link Units} to use.
+	 * @param units The {@link WeightUnits} to use.
 	 */
 	public WeightValue(double value, WeightUnits units) {
 		super(value, units);
@@ -54,6 +54,17 @@ public class WeightValue extends UnitsValue<WeightUnits> {
 	 */
 	public WeightValue(WeightValue other) {
 		super(other);
+	}
+
+	/**
+	 * Creates a new {@link WeightValue} from an existing one and converts it to the given
+	 * {@link WeightUnits}.
+	 *
+	 * @param other The {@link WeightValue} to convert.
+	 * @param units The {@link WeightUnits} to use.
+	 */
+	public WeightValue(WeightValue other, WeightUnits units) {
+		super(other, units);
 	}
 
 	@Override

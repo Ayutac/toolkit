@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 1998-2014 by Richard A. Wilkes. All rights reserved.
+ * Copyright (c) 1998-2015 by Richard A. Wilkes. All rights reserved.
  *
  * This Source Code Form is subject to the terms of the Mozilla Public License,
  * version 2.0. If a copy of the MPL was not distributed with this file, You
@@ -36,19 +36,29 @@ import javax.swing.text.DefaultFormatterFactory;
 /** Provides the basic print panel. */
 public class PrintPanel extends PageSetupPanel {
 	@Localize("Copies")
+	@Localize(locale = "ru", value = "Копии")
 	@Localize(locale = "de", value = "Kopien")
+	@Localize(locale = "es", value = "Copias")
 	private static String	COPIES;
 	@Localize("Print Range")
+	@Localize(locale = "ru", value = "Печать диапазона")
 	@Localize(locale = "de", value = "Seiten")
+	@Localize(locale = "es", value = "Rango de páginas")
 	private static String	PAGE_RANGE;
 	@Localize("All")
+	@Localize(locale = "ru", value = "Всё")
 	@Localize(locale = "de", value = "alle")
+	@Localize(locale = "es", value = "Todo")
 	private static String	ALL;
 	@Localize("Pages")
+	@Localize(locale = "ru", value = "Страницы")
 	@Localize(locale = "de", value = "von Seite")
+	@Localize(locale = "es", value = "Páginas")
 	private static String	PAGES;
 	@Localize("to")
+	@Localize(locale = "ru", value = "-")
 	@Localize(locale = "de", value = "bis")
+	@Localize(locale = "es", value = "a")
 	private static String	TO;
 
 	static {

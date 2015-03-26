@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 1998-2014 by Richard A. Wilkes. All rights reserved.
+ * Copyright (c) 1998-2015 by Richard A. Wilkes. All rights reserved.
  *
  * This Source Code Form is subject to the terms of the Mozilla Public License,
  * version 2.0. If a copy of the MPL was not distributed with this file, You
@@ -24,10 +24,14 @@ public class Text {
 	@Localize("an")
 	private static String		AN;
 	@Localize("was")
+	@Localize(locale = "ru", value = "был")
 	@Localize(locale = "de", value = "wurde")
+	@Localize(locale = "es", value = "era")
 	private static String		WAS;
 	@Localize("were")
+	@Localize(locale = "ru", value = "где")
 	@Localize(locale = "de", value = "wurden")
+	@Localize(locale = "es", value = "eran")
 	private static String		WERE;
 
 	static {

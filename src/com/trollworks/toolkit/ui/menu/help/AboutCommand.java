@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 1998-2014 by Richard A. Wilkes. All rights reserved.
+ * Copyright (c) 1998-2015 by Richard A. Wilkes. All rights reserved.
  *
  * This Source Code Form is subject to the terms of the Mozilla Public License,
  * version 2.0. If a copy of the MPL was not distributed with this file, You
@@ -33,7 +33,9 @@ import javax.swing.JPanel;
 /** Provides the "About" command. */
 public class AboutCommand extends Command implements AboutHandler {
 	@Localize("About {0}")
+	@Localize(locale = "ru", value = "О программе {0}")
 	@Localize(locale = "de", value = "Über {0}")
+	@Localize(locale = "es", value = "Acerca de {0}")
 	private static String				ABOUT;
 
 	static {

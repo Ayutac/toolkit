@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 1998-2014 by Richard A. Wilkes. All rights reserved.
+ * Copyright (c) 1998-2015 by Richard A. Wilkes. All rights reserved.
  *
  * This Source Code Form is subject to the terms of the Mozilla Public License,
  * version 2.0. If a copy of the MPL was not distributed with this file, You
@@ -51,13 +51,19 @@ import org.w3c.dom.Node;
 /** Provides a {@link BufferedImage} that implements Swing's {@link Icon} interface for convenience. */
 public class StdImage extends BufferedImage implements Icon {
 	@Localize("Unable to load image")
+	@Localize(locale = "ru", value = "Невозможно загрузить изображение")
 	@Localize(locale = "de", value = "Kann Bild nicht laden")
+	@Localize(locale = "es", value = "")
 	private static String							UNABLE_TO_LOAD_IMAGE;
 	@Localize("Invalid angle: %d")
+	@Localize(locale = "ru", value = "Недопустимый угол: %d")
 	@Localize(locale = "de", value = "Ungültiger Winkel: %d")
+	@Localize(locale = "es", value = "")
 	private static String							INVALID_ANGLE;
 	@Localize("Invalid transparency")
+	@Localize(locale = "ru", value = "Недопустимая прозрачность")
 	@Localize(locale = "de", value = "Ungültige Transparenz")
+	@Localize(locale = "es", value = "La transparencia no es válida")
 	private static String							INVALID_TRANSPARENCY;
 
 	static {

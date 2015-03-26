@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 1998-2014 by Richard A. Wilkes. All rights reserved.
+ * Copyright (c) 1998-2015 by Richard A. Wilkes. All rights reserved.
  *
  * This Source Code Form is subject to the terms of the Mozilla Public License,
  * version 2.0. If a copy of the MPL was not distributed with this file, You
@@ -56,13 +56,19 @@ public enum Quality {
 	};
 
 	@Localize("High")
+	@Localize(locale = "ru", value = "Высокий")
 	@Localize(locale = "de", value = "Hoch")
+	@Localize(locale = "es", value = "Alta")
 	static String	HIGH_TITLE;
 	@Localize("Normal")
+	@Localize(locale = "ru", value = "Обычный")
 	@Localize(locale = "de", value = "Normal")
+	@Localize(locale = "es", value = "Normal")
 	static String	NORMAL_TITLE;
 	@Localize("Draft")
+	@Localize(locale = "ru", value = "Черновик")
 	@Localize(locale = "de", value = "Entwurf")
+	@Localize(locale = "es", value = "Borrador")
 	static String	DRAFT_TITLE;
 
 	static {

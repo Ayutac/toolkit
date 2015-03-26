@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 1998-2014 by Richard A. Wilkes. All rights reserved.
+ * Copyright (c) 1998-2015 by Richard A. Wilkes. All rights reserved.
  *
  * This Source Code Form is subject to the terms of the Mozilla Public License,
  * version 2.0. If a copy of the MPL was not distributed with this file, You
@@ -19,10 +19,14 @@ import javax.swing.undo.CompoundEdit;
 /** Provides a convenient way to collect multiple undos into a single undo. */
 public class MultipleUndo extends CompoundEdit {
 	@Localize("Redo ")
+	@Localize(locale = "ru", value = "Повторить ")
 	@Localize(locale = "de", value = "Wiederherstellen: ")
+	@Localize(locale = "es", value = "Rehacer ")
 	private static String	REDO_PREFIX;
 	@Localize("Undo ")
+	@Localize(locale = "ru", value = "Отменить ")
 	@Localize(locale = "de", value = "Rückgängig: ")
+	@Localize(locale = "es", value = "Deshacer ")
 	private static String	UNDO_PREFIX;
 
 	static {

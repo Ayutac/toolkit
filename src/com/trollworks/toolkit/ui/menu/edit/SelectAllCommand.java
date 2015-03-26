@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 1998-2014 by Richard A. Wilkes. All rights reserved.
+ * Copyright (c) 1998-2015 by Richard A. Wilkes. All rights reserved.
  *
  * This Source Code Form is subject to the terms of the Mozilla Public License,
  * version 2.0. If a copy of the MPL was not distributed with this file, You
@@ -24,7 +24,9 @@ import javax.swing.text.JTextComponent;
 /** Provides the "Select All" command. */
 public class SelectAllCommand extends Command {
 	@Localize("Select All")
+	@Localize(locale = "ru", value = "Выбрать всё")
 	@Localize(locale = "de", value = "Alles auswählen")
+	@Localize(locale = "es", value = "Selecionar todo")
 	private static String					SELECT_ALL;
 
 	static {

@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 1998-2014 by Richard A. Wilkes. All rights reserved.
+ * Copyright (c) 1998-2015 by Richard A. Wilkes. All rights reserved.
  *
  * This Source Code Form is subject to the terms of the Mozilla Public License,
  * version 2.0. If a copy of the MPL was not distributed with this file, You
@@ -32,14 +32,20 @@ import javax.xml.stream.XMLStreamWriter;
 
 /** Provides simple XML generation. */
 public class XmlGenerator implements AutoCloseable {
-	@Localize("%s has not been annotated with @%s")
+	@Localize("%s has not been annotated with @%s.")
+	@Localize(locale = "ru", value = "%s не имеет комментариев @%s.")
+	@Localize(locale = "de", value = "%s wurde nicht mit @%s annotiert.")
+	@Localize(locale = "es", value = "%s no ha sido anotado con @%s.")
 	private static String		NOT_TAGGED;
 
 	static {
 		Localization.initialize();
 	}
 
-	/** The attribute that will be used for a tag's version, if {@link #add(Object)} or {@link #add(String, Object)} is called. */
+	/**
+	 * The attribute that will be used for a tag's version, if {@link #add(Object)} or
+	 * {@link #add(String, Object)} is called.
+	 */
 	public static final String	ATTR_VERSION	= "version";	//$NON-NLS-1$
 	private String				mIndent			= "\t";		//$NON-NLS-1$
 	private XMLStreamWriter		mWriter;

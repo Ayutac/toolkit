@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 1998-2014 by Richard A. Wilkes. All rights reserved.
+ * Copyright (c) 1998-2015 by Richard A. Wilkes. All rights reserved.
  *
  * This Source Code Form is subject to the terms of the Mozilla Public License,
  * version 2.0. If a copy of the MPL was not distributed with this file, You
@@ -41,10 +41,14 @@ import javax.swing.border.EmptyBorder;
 /** The header for a {@link DockContainer}. */
 public class DockHeader extends JPanel implements LayoutManager, DropTargetListener {
 	@Localize("Maximize")
+	@Localize(locale = "ru", value = "Развернуть")
 	@Localize(locale = "de", value = "Maximieren")
+	@Localize(locale = "es", value = "Maximizar")
 	private static String		MAXIMIZE_TOOLTIP;
 	@Localize("Restore")
+	@Localize(locale = "ru", value = "Восстановить")
 	@Localize(locale = "de", value = "Wiederherstellen")
+	@Localize(locale = "es", value = "Restaurar")
 	private static String		RESTORE_TOOLTIP;
 
 	static {

@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 1998-2014 by Richard A. Wilkes. All rights reserved.
+ * Copyright (c) 1998-2015 by Richard A. Wilkes. All rights reserved.
  *
  * This Source Code Form is subject to the terms of the Mozilla Public License,
  * version 2.0. If a copy of the MPL was not distributed with this file, You
@@ -44,10 +44,14 @@ public enum InkChromaticity {
 	};
 
 	@Localize("Color")
+	@Localize(locale = "ru", value = "Цвет")
 	@Localize(locale = "de", value = "Farbe")
+	@Localize(locale = "es", value = "Color")
 	static String	COLOR_TITLE;
 	@Localize("Monochrome")
+	@Localize(locale = "ru", value = "Черно-белый")
 	@Localize(locale = "de", value = "Graustufen")
+	@Localize(locale = "es", value = "Monocromo")
 	static String	MONOCHROME_TITLE;
 
 	static {

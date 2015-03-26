@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 1998-2014 by Richard A. Wilkes. All rights reserved.
+ * Copyright (c) 1998-2015 by Richard A. Wilkes. All rights reserved.
  *
  * This Source Code Form is subject to the terms of the Mozilla Public License,
  * version 2.0. If a copy of the MPL was not distributed with this file, You
@@ -27,10 +27,14 @@ import javax.swing.JOptionPane;
 /** Provides the "Save" command. */
 public class SaveCommand extends Command {
 	@Localize("Save")
+	@Localize(locale = "ru", value = "Сохранить")
 	@Localize(locale = "de", value = "Speichern")
+	@Localize(locale = "es", value = "Salvar")
 	private static String			SAVE;
 	@Localize("Save changes to \"{0}\"?")
+	@Localize(locale = "ru", value = "Сохранить изменения в \"{0}\"?")
 	@Localize(locale = "de", value = "Änderungen in \"{0}\" speichern?")
+	@Localize(locale = "es", value = "Salvar cambios en \"{0}\"?")
 	private static String			SAVE_CHANGES;
 
 	static {

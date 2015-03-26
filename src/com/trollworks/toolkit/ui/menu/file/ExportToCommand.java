@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 1998-2014 by Richard A. Wilkes. All rights reserved.
+ * Copyright (c) 1998-2015 by Richard A. Wilkes. All rights reserved.
  *
  * This Source Code Form is subject to the terms of the Mozilla Public License,
  * version 2.0. If a copy of the MPL was not distributed with this file, You
@@ -24,13 +24,19 @@ import java.io.File;
 /** Provides the "Save As..." command. */
 public class ExportToCommand extends Command {
 	@Localize("Export To HTML\u2026")
+	@Localize(locale = "ru", value = "Экспорт в HTML\u2026")
 	@Localize(locale = "de", value = "Exportiere als HTML\u2026")
+	@Localize(locale = "es", value = "Exportar a HTML\u2026")
 	private static String				HTML;
 	@Localize("Export To PDF\u2026")
+	@Localize(locale = "ru", value = "Экспорт в PDF\u2026")
 	@Localize(locale = "de", value = "Exportiere als PDF\u2026")
+	@Localize(locale = "es", value = "Exportar a PDF\u2026")
 	private static String				PDF;
 	@Localize("Export to PNG\u2026")
+	@Localize(locale = "ru", value = "Экспорт в PNG\u2026")
 	@Localize(locale = "de", value = "Exportiere als PNG\u2026")
+	@Localize(locale = "es", value = "Exportar a PNG\u2026")
 	private static String				PNG;
 
 	static {

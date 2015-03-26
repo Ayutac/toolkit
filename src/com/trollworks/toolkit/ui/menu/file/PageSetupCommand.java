@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 1998-2014 by Richard A. Wilkes. All rights reserved.
+ * Copyright (c) 1998-2015 by Richard A. Wilkes. All rights reserved.
  *
  * This Source Code Form is subject to the terms of the Mozilla Public License,
  * version 2.0. If a copy of the MPL was not distributed with this file, You
@@ -25,10 +25,14 @@ import java.awt.event.KeyEvent;
 /** Provides the "Page Setup..." command. */
 public class PageSetupCommand extends Command {
 	@Localize("Page Setup\u2026")
+	@Localize(locale = "ru", value = "Настройка страницы\u2026")
 	@Localize(locale = "de", value = "Seite einrichten\u2026")
+	@Localize(locale = "es", value = "Configurar página")
 	private static String					PAGE_SETUP;
 	@Localize("There is no system printer available.")
+	@Localize(locale = "ru", value = "Нет доступного системного принтера")
 	@Localize(locale = "de", value = "Es wurde kein Standard-Drucker gefunden.")
+	@Localize(locale = "es", value = "No hay impresora disponible en el sistema.")
 	private static String					NO_PRINTER_SELECTED;
 
 	static {

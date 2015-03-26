@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 1998-2014 by Richard A. Wilkes. All rights reserved.
+ * Copyright (c) 1998-2015 by Richard A. Wilkes. All rights reserved.
  *
  * This Source Code Form is subject to the terms of the Mozilla Public License,
  * version 2.0. If a copy of the MPL was not distributed with this file, You
@@ -39,6 +39,18 @@ public class UnitsValue<T extends Units> implements Comparable<UnitsValue<T>> {
 	public UnitsValue(UnitsValue<T> other) {
 		mValue = other.mValue;
 		mUnits = other.mUnits;
+	}
+
+	/**
+	 * Creates a new {@link UnitsValue} from an existing one and converts it to the given
+	 * {@link Units}.
+	 *
+	 * @param other The {@link UnitsValue} to convert.
+	 * @param units The {@link Units} to use.
+	 */
+	public UnitsValue(UnitsValue<T> other, T units) {
+		mValue = units.convert(other.mUnits, other.mValue);
+		mUnits = units;
 	}
 
 	/** @param other A {@link UnitsValue} to copy state from. */

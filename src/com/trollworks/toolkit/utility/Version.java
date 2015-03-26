@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 1998-2014 by Richard A. Wilkes. All rights reserved.
+ * Copyright (c) 1998-2015 by Richard A. Wilkes. All rights reserved.
  *
  * This Source Code Form is subject to the terms of the Mozilla Public License,
  * version 2.0. If a copy of the MPL was not distributed with this file, You
@@ -18,10 +18,14 @@ import java.util.Calendar;
 /** Provides support for various forms of version numbers. */
 public class Version {
 	@Localize("Invalid version format")
+	@Localize(locale = "ru", value = "Недопустимая верия формата")
 	@Localize(locale = "de", value = "Ungültiges Format der Versionsnumer")
+	@Localize(locale = "es", value = "Formato de versión no válido")
 	private static String		INVALID_VERSION_FORMAT;
 	@Localize("Built on %1$tB %1$te, %1$tY at %1$tr")
+	@Localize(locale = "ru", value = "Сборка программы от %1$tB %1$te, %1$tY в %1$tr")
 	@Localize(locale = "de", value = "Erstellt am %1$te. %1$tB %1$tY um %1$tT")
+	@Localize(locale = "es", value = "Compilado el %1$tB %1$te, %1$tY at %1$tr")
 	private static String		BUILD_FORMAT;
 
 	static {

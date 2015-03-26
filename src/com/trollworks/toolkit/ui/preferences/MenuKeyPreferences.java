@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 1998-2014 by Richard A. Wilkes. All rights reserved.
+ * Copyright (c) 1998-2015 by Richard A. Wilkes. All rights reserved.
  *
  * This Source Code Form is subject to the terms of the Mozilla Public License,
  * version 2.0. If a copy of the MPL was not distributed with this file, You
@@ -40,19 +40,29 @@ import javax.swing.border.EmptyBorder;
 /** The menu keys preferences panel. */
 public class MenuKeyPreferences extends PreferencePanel implements ActionListener {
 	@Localize("Menu Keys")
+	@Localize(locale = "ru", value = "Меню Клавиши")
 	@Localize(locale = "de", value = "Tastaturkürzel")
+	@Localize(locale = "es", value = "Teclas del menú")
 	private static String				MENU_KEYS;
 	@Localize("Type a keystroke\u2026")
+	@Localize(locale = "ru", value = "Ввести сочетание клавиш\u2026")
 	@Localize(locale = "de", value = "Tastenkombination drücken\u2026")
+	@Localize(locale = "es", value = "Elige una combinación de teclas\u2026")
 	private static String				TYPE_KEYSTROKE;
 	@Localize("Clear")
+	@Localize(locale = "ru", value = "Очистить")
 	@Localize(locale = "de", value = "Löschen")
+	@Localize(locale = "es", value = "Borrar")
 	private static String				CLEAR;
 	@Localize("Accept")
+	@Localize(locale = "ru", value = "Применить")
 	@Localize(locale = "de", value = "Setzen")
+	@Localize(locale = "es", value = "Aceptar")
 	private static String				ACCEPT;
 	@Localize("Reset")
+	@Localize(locale = "ru", value = "Сброс")
 	@Localize(locale = "de", value = "Standard")
+	@Localize(locale = "es", value = "Reiniciar")
 	private static String				RESET;
 
 	static {

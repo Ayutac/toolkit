@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 1998-2014 by Richard A. Wilkes. All rights reserved.
+ * Copyright (c) 1998-2015 by Richard A. Wilkes. All rights reserved.
  *
  * This Source Code Form is subject to the terms of the Mozilla Public License,
  * version 2.0. If a copy of the MPL was not distributed with this file, You
@@ -50,7 +50,9 @@ import javax.swing.border.EmptyBorder;
 /** Provides a tab that contains the {@link Dockable}'s icon, title, and close button, if any. */
 public class DockTab extends JPanel implements ContainerListener, MouseListener, DragGestureListener, DataModifiedListener, Comparable<DockTab> {
 	@Localize("Close")
+	@Localize(locale = "ru", value = "Закрыть")
 	@Localize(locale = "de", value = "Schließen")
+	@Localize(locale = "es", value = "Cerrar")
 	private static String	CLOSE_TOOLTIP;
 
 	static {
